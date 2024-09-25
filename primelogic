@@ -1,0 +1,7 @@
+#Prime Logic
+n=int(input("Enter Ph-No: "))
+if n % 3 == 0 and n % 2 == 0:
+    print("NOt Prime")
+    
+else:
+    print("prime")
