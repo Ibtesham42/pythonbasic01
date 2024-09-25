@@ -1,0 +1,36 @@
+#Sum Of Phone Number To Single Digits
+n=int(input("Enter Ph-No: "))
+s = 0
+i = 0
+while n > 0:
+    l=((str(n)))
+    break
+s=l
+sum1 =0
+while i < len(s):
+    sum1 += int(s[i])
+    i+=1
+l2=(str(sum1))
+print("Total Firtst Sum is --->",l2)
+s2=l2
+total=0
+i=0
+while i < len(s2):
+    total += int(s2[i])
+    i+=1
+if total >= 10:
+        
+        l3=(str(total))
+        s3=l3
+        print("Second Sum is :-->",l3)
+        i=0
+        final = 0
+        while i < len((s3)):
+            final += int(s3[i])
+            i+=1
+        print("Final Sum of Digits-->",final)
+else:
+    print("Final Sum of Digits-->",total)
+        
+    
+
