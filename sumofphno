@@ -1,4 +1,4 @@
-#Sum Of Phone Number To Single Digits
+#Sum Of Phone Number To Single Digits using WHILE LOOP
 n=int(input("Enter Ph-No: "))
 s = 0
 i = 0
@@ -31,6 +31,27 @@ if total >= 10:
         print("Final Sum of Digits-->",final)
 else:
     print("Final Sum of Digits-->",total)
+
+
+
+
+
+# using FOR LOOP
+n = str(input("Enter No"))
+#l=[n]
+su=0
+for i in range(len(n)):
+    su+=int(n[i])
+    if su>= 10:
+        s = str(su)
+        su=int(s[0])+int(s[1])
+        if su > 10:
+            s = str(su)
+            su=int(s[0])+int(s[1])
+    
+
+print(su)    
+    
         
     
 
