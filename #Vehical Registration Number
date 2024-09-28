@@ -1,0 +1,25 @@
+#Vehical Registration Number
+#List of all 4-digit possible numbers which satisfy the following conditons
+#1) All number should be in increasing order
+#2) Last digit should be 9
+#3) Sum of all digits should be 8
+l=[]
+su=0
+c=0
+s3=0
+for i in range(10):
+    for j in range(i,10):
+        for k in range(j,10):
+            m=9
+            n=[i,j, k, m]
+            su = n[0]+n[1]+n[2]+n[3]
+            if su >= 10:
+                s =str(su)
+                s3 = int(s[0])+int(s[1])
+                if s3 == 8:
+                    c+=1
+                    l.append(n)
+                    #print()
+print("Total-->",c ,"<--Possible ways")                 
+for nm in l:
+    print(nm)
